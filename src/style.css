@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Parkinsans:wght@300..800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+#app {
+  background: linear-gradient(to right, #0172af, #74febd);
+}
+#progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 8px; /* Track height */
+  background: #74febd;
+  border-radius: 5px; /* Rounded corners for track */
+  outline: none;
+}
+#progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #0172af;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 8px solid white;
+  box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}
